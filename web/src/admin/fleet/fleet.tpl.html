@@ -1,0 +1,12 @@
+<div class="mdl-cell mdl-cell--4-col" ng-repeat="aircraft in fleet.FleetModel.fleet">
+    <md-button class="md-fab">
+        <md-icon>flight</md-icon>
+    </md-button>
+    <label>{{aircraft.tailNumber}}</label>
+</div>
+<div class="mdl-cell mdl-cell--4-col">
+    <md-button class="md-fab" ui-sref="new">
+        <md-icon>add</md-icon>
+    </md-button>
+    <label>New Aircraft</label>
+</div>

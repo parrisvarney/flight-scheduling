@@ -1,0 +1,37 @@
+<div layout="column">
+    <div flex="100">
+        <h2>New Aircraft</h2>
+    </div>
+    <div flex="100">
+        <md-list-item>
+            <md-input-container>
+                <label for="tail-number">Tail Number</label>
+                <input type="text" ng-model="tailNumber" required id="tail-number">
+            </md-input-container>
+        </md-list-item>
+        <md-list-item>
+            <md-input-container>
+                <label for="make">Make</label>
+                <input type="text" ng-model="make" required id="make">
+            </md-input-container>
+        </md-list-item>
+        <md-list-item>
+            <md-input-container>
+                <label for="model">Model</label>
+                <input type="text" ng-model="model" required id="model">
+            </md-input-container>
+        </md-list-item>
+        <md-list-item>
+            <md-input-container>
+                <label for="color">Color</label>
+                <input type="text" ng-model="color" required id="color">
+            </md-input-container>
+        </md-list-item>
+    </div>
+    <div flex="100">
+        <md-list-item>
+            <md-button class="md-raised">Cancel</md-button>
+            <md-button class="md-raised" ng-click="fleet.saveNewAircraft(tailNumber, make, model, color)">Save</md-button>
+        </md-list-item>
+    </div>
+</div>

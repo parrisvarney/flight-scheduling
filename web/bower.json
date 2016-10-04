@@ -1,0 +1,22 @@
+{
+  "name": "Flight Scheduler",
+  "version": "0.0.1",
+  "authors": [
+    "Parris Varney <pvarney@copatient.com>"
+  ],
+  "description": "Easy flight scheduling",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.8",
+    "mdl": "~1.2.1",
+    "ui-router": "~0.3.1",
+    "angular-material": "~1.1.1"
+  }
+}
