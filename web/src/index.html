@@ -22,6 +22,8 @@
     <!-- Project sources -->
     <script src="admin/fleet/model.js"></script>
     <script src="admin/fleet/controller.js"></script>
+    <script src="admin/pilots/model.js"></script>
+    <script src="admin/pilots/controller.js"></script>
     <script src="admin/_admin.js"></script>
 </head>
 <body ng-app="flightScheduler" ng-controller="MainController">
@@ -31,7 +33,7 @@
             <span class="mdl-layout-title">Flight Scheduling</span>
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="">Home</a>
+                <a class="mdl-navigation__link" ui-sref="admin">Administrator Home</a>
                 <a class="mdl-navigation__link" href="">Logout</a>
             </nav>
         </div>
@@ -39,7 +41,7 @@
     <div class="mdl-layout__drawer mdl-layout--small-screen-only">
         <span class="mdl-layout-title">Flight Scheduling</span>
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Home</a>
+            <a class="mdl-navigation__link" ui-sref="admin">Administrator Home</a>
             <a class="mdl-navigation__link" href="">Logout</a>
         </nav>
     </div>

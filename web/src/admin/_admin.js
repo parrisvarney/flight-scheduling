@@ -1,14 +1,22 @@
 'use strict';
+
 angular.module('flightScheduler', [
     'ui.router',
     'ngMaterial'
 ])
-.config(['$stateProvider', function($stateProvider) {
+.config(($stateProvider) => {
     $stateProvider
+        .state({
+            name:         'default',
+            url:          '',
+            templateUrl:  'admin/home/home.tpl.html',
+            controller:   'AdminHomeController',
+            controllerAs: 'adminHome'
+        })
         .state({
             name:         'admin',
             url:          '/admin/home',
-            templateUrl:  'admin/fleet/home.tpl.html',
+            templateUrl:  'admin/home/home.tpl.html',
             controller:   'AdminHomeController',
             controllerAs: 'adminHome'
         })
@@ -20,18 +28,32 @@ angular.module('flightScheduler', [
             controllerAs: 'fleet'
         })
         .state({
-            name:         'new',
+            name:         'new-aircraft',
             url:          '/admin/fleet/new',
             templateUrl:  'admin/fleet/new.tpl.html',
             controller:   'FleetController',
             controllerAs: 'fleet'
         })
-}])
-.controller('MainController', ['$scope', function($scope) {
-}])
-.controller('AdminHomeController', ['$scope', function($scope) {
-}])
+        .state({
+            name:         'pilots',
+            url:          '/admin/pilots',
+            templateUrl:  'admin/pilots/pilots.tpl.html',
+            controller:   'PilotsController',
+            controllerAs: 'pilots'
+        })
+        .state({
+            name:         'new-pilot',
+            url:          '/admin/pilots/new',
+            templateUrl:  'admin/pilots/new.tpl.html',
+            controller:   'PilotsController',
+            controllerAs: 'pilots'
+        });
+})
+.controller('MainController', ['$scope', function($scope) {}])
+.controller('AdminHomeController', ['$scope', function($scope) {}])
 .controller('FleetController', FleetController)
 .service('FleetModel', FleetModel)
+.controller('PilotsController', PilotsController)
+.service('PilotsModel', PilotsModel)
 ;
 

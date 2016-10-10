@@ -1,0 +1,12 @@
+<div class="mdl-cell mdl-cell--4-col" ng-repeat="pilot in pilots.PilotsModel.pilots">
+    <md-button class="md-fab">
+        <md-icon>group</md-icon>
+    </md-button>
+    <label>{{pilot.fullName}}</label>
+</div>
+<div class="mdl-cell mdl-cell--4-col">
+    <md-button class="md-fab" ui-sref="new-pilot">
+        <md-icon>add</md-icon>
+    </md-button>
+    <label>New Pilot</label>
+</div>

@@ -1,5 +1,6 @@
 class FleetController {
     /**
+     * @param {$state} $state
      * @param {FleetModel} FleetModel
      */
     constructor($state, FleetModel) {
@@ -7,7 +8,7 @@ class FleetController {
         this.FleetModel = FleetModel;
     }
 
-    saveNewAircraft(tailNumber, make, model, color) {
+    addNewAircraft(tailNumber, make, model, color) {
         this.FleetModel
             .addNewAircraft(tailNumber, make, model, color)
             .then(aircraft => {
