@@ -24,7 +24,7 @@ module.exports = function(config) {
       'web/src/admin/fleet/*.js',
       'web/src/admin/home/*.js',
       'web/src/admin/pilots/*.js',
-      'web/src/admin/_admin.js'
+      'web/src/admin/module.js'
     ],
 
     // preprocess matching files before serving them to the browser
