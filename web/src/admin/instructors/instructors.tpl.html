@@ -1,0 +1,12 @@
+<div class="mdl-cell mdl-cell--4-col" ng-repeat="instructor in instructors.InstructorsModel.instructors">
+    <md-button class="md-fab">
+        <md-icon>school</md-icon>
+    </md-button>
+    <label>{{instructor.name}}</label>
+</div>
+<div class="mdl-cell mdl-cell--4-col">
+    <md-button class="md-fab" ui-sref="new-instructor">
+        <md-icon>add</md-icon>
+    </md-button>
+    <label>New Instructor</label>
+</div>

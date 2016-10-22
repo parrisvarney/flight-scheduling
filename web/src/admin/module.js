@@ -47,6 +47,20 @@ angular.module('flightScheduler', [
             templateUrl:  'admin/pilots/new.tpl.html',
             controller:   'PilotsController',
             controllerAs: 'pilots'
+        })
+        .state({
+            name:         'instructors',
+            url:          '/admin/instructors',
+            templateUrl:  'admin/instructors/instructors.tpl.html',
+            controller:   'InstructorsController',
+            controllerAs: 'instructors'
+        })
+        .state({
+            name:         'new-instructor',
+            url:          '/admin/instructors/new',
+            templateUrl:  'admin/instructors/new.tpl.html',
+            controller:   'InstructorsController',
+            controllerAs: 'instructors'
         });
 })
 .controller('MainController', ['$scope', function($scope) {}])
@@ -55,5 +69,7 @@ angular.module('flightScheduler', [
 .service('FleetModel', FleetModel)
 .controller('PilotsController', PilotsController)
 .service('PilotsModel', PilotsModel)
+.controller('InstructorsController', InstructorsController)
+.service('InstructorsModel', InstructorsModel)
 ;
 

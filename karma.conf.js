@@ -24,6 +24,7 @@ module.exports = function(config) {
       'web/src/admin/fleet/*.js',
       'web/src/admin/home/*.js',
       'web/src/admin/pilots/*.js',
+      'web/src/admin/instructors/*.js',
       'web/src/admin/module.js'
     ],
 

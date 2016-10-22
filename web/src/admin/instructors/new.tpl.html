@@ -1,0 +1,25 @@
+<div layout="column">
+    <div flex="100">
+        <h2>New Instructor</h2>
+    </div>
+    <div flex="100">
+        <md-list-item>
+            <md-input-container>
+                <label for="name">Name</label>
+                <input type="text" ng-model="name" required id="name">
+            </md-input-container>
+        </md-list-item>
+        <md-list-item>
+            <md-input-container>
+                <label for="ratings">Ratings</label>
+                <input type="text" ng-model="ratings" required id="ratings">
+            </md-input-container>
+        </md-list-item>
+    </div>
+    <div flex="100">
+        <md-list-item>
+            <md-button class="md-raised" ui-sref="instructors">Cancel</md-button>
+            <md-button class="md-raised" ng-click="instructors.addNewInstructor(name, ['test rating'])">Save</md-button>
+        </md-list-item>
+    </div>
+</div>
