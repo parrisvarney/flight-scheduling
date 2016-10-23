@@ -1,4 +1,4 @@
-class PilotsController {
+export default class PilotsController {
     /**
      * @param {$state} $state
      * @param {PilotsModel} PilotsModel

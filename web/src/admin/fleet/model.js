@@ -1,4 +1,4 @@
-class FleetModel {
+export default class FleetModel {
     constructor($q) {
         const testAircraft = [
             {tailNumber: 'N8092H', make: 'Piper', model: 'Warrior II', color: 'White Blue Gold'},

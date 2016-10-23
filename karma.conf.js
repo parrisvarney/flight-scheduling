@@ -21,11 +21,8 @@ module.exports = function(config) {
       'web/bower_components/angular-material/angular-material.js',
       'web/bower_components/angular-animate/angular-animate.js',
       'web/bower_components/angular-aria/angular-aria.js',
-      'web/src/admin/fleet/*.js',
-      'web/src/admin/home/*.js',
-      'web/src/admin/pilots/*.js',
-      'web/src/admin/instructors/*.js',
-      'web/src/admin/module.js'
+      'web/src/module.packed.js',
+      'web/src/**/*.spec.js',
     ],
 
     // preprocess matching files before serving them to the browser
@@ -70,4 +67,4 @@ module.exports = function(config) {
     // how many browser should be started simultaneous
     concurrency: Infinity
   })
-}
+};

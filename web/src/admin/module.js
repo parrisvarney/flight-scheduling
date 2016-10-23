@@ -1,5 +1,14 @@
 'use strict';
 
+import FleetController from './fleet/controller';
+import FleetModel from './fleet/model';
+
+import PilotsController from './pilots/controller';
+import PilotsModel from './pilots/model';
+
+import InstructorsController from './instructors/controller';
+import InstructorsModel from './instructors/model';
+
 angular.module('flightScheduler', [
     'ui.router',
     'ngMaterial'
@@ -72,4 +81,3 @@ angular.module('flightScheduler', [
 .controller('InstructorsController', InstructorsController)
 .service('InstructorsModel', InstructorsModel)
 ;
-

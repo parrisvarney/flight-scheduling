@@ -15,10 +15,10 @@ describe('FleetModel', () => {
             }
         });
 
-        inject(function(_$q_, $rootScope){
+        inject(function(_$q_, $rootScope, _FleetModel_){
             $q         = _$q_;
             $scope     = $rootScope.$new();
-            fleetModel = new FleetModel($q);
+            fleetModel = _FleetModel_;
         })
     });
 

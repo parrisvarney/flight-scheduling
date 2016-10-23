@@ -15,10 +15,10 @@ describe('PilotsModel', () => {
             }
         });
 
-        inject(function(_$q_, $rootScope){
+        inject(function(_$q_, $rootScope, _PilotsModel_){
             $q         = _$q_;
             $scope     = $rootScope.$new();
-            pilotsModel = new PilotsModel($q);
+            pilotsModel = _PilotsModel_;
         })
     });
 

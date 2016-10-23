@@ -1,4 +1,4 @@
-class PilotsModel {
+export default class PilotsModel {
     constructor($q) {
         const testPilots = [
             {fullName: 'Parris Varney', address: '54 Appleton St', ratings: ['Private Pilot'], current: true},

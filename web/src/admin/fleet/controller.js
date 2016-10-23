@@ -1,4 +1,4 @@
-class FleetController {
+export default class FleetController {
     /**
      * @param {$state} $state
      * @param {FleetModel} FleetModel
