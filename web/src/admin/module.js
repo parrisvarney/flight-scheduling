@@ -1,4 +1,11 @@
 'use strict';
+import angular from 'angular';
+import 'angular-ui-router';
+
+import 'angular-animate';
+import 'angular-aria';
+import 'angular-material';
+import 'angular-material/angular-material.css';
 
 import FleetController from './fleet/controller';
 import FleetModel from './fleet/model';
