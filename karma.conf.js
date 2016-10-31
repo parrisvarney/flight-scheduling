@@ -17,11 +17,7 @@ module.exports = function(config) {
     files: [
       'web/bower_components/angular/angular.js',
       'web/bower_components/angular-mocks/angular-mocks.js',
-      'web/bower_components/ui-router/release/angular-ui-router.js',
-      'web/bower_components/angular-material/angular-material.js',
-      'web/bower_components/angular-animate/angular-animate.js',
-      'web/bower_components/angular-aria/angular-aria.js',
-      'web/src/module.packed.js',
+      'web/src/index.packed.js',
       'web/src/**/*.spec.js',
     ],
 

@@ -1,9 +1,9 @@
 module.exports = {
     context: __dirname + "/src",
-    entry: "./admin/module.js",
+    entry: "./index.js",
     output: {
         path: __dirname + "/src",
-        filename: "module.packed.js"
+        filename: "index.packed.js"
     },
     module: {
         loaders: [
