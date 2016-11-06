@@ -7,6 +7,13 @@ const pilotsRouting = ($stateProvider) => {
             controller:   'PilotsHomeController',
             controllerAs: 'pilotsHome'
         })
+        .state({
+            name:         'reservations',
+            url:          '/pilots/reservations',
+            templateUrl:  'pilots/reservations/reservations.tpl.html',
+            controller:   'ReservationsController',
+            controllerAs: 'reservations'
+        })
 };
 
 export default pilotsRouting;

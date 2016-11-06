@@ -21,6 +21,11 @@ import PilotsModel from './admin/pilots/model';
 import InstructorsController from './admin/instructors/controller';
 import InstructorsModel from './admin/instructors/model';
 
+import ReservationsController from './pilots/reservations/controller';
+import ReservationsModel from './pilots/reservations/model';
+import CalendarComponent from './pilots/reservations/components/calendar';
+import CalendarDayComponent from './pilots/reservations/components/calendar-day';
+
 // Initialize project
 angular.module('flightScheduler', [
     'ui.router',
@@ -38,4 +43,8 @@ angular.module('flightScheduler', [
 
 .config(pilotsRouting)
 .controller('PilotsHomeController', ['$scope', function($scope) {}])
+.controller('ReservationsController', ReservationsController)
+.service('ReservationsModel', ReservationsModel)
+.component('calendar', new CalendarComponent())
+.component('day', new CalendarDayComponent())
 ;

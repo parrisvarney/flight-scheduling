@@ -1,0 +1,43 @@
+<div layout="column">
+    <div flex="100">
+        <h2>New Reservation</h2>
+    </div>
+    <div flex="100">
+        <md-list-item>
+            <md-input-container>
+                <label for="tail-number">Aircraft</label>
+                <input type="text" ng-model="tailNumber" required id="tail-number">
+            </md-input-container>
+        </md-list-item>
+        <md-list-item>
+            <md-input-container>
+                <label for="pilot">Pilot</label>
+                <input type="text" ng-model="pilot" required id="pilot">
+            </md-input-container>
+        </md-list-item>
+        <md-list-item>
+            <md-input-container>
+                <label for="instructor">Instructor</label>
+                <input type="text" ng-model="instructor" required id="instructor">
+            </md-input-container>
+        </md-list-item>
+        <md-list-item>
+            <md-input-container>
+                <label for="date">Date</label>
+                <input type="text" ng-model="date" required id="date">
+            </md-input-container>
+        </md-list-item>
+        <md-list-item>
+            <md-input-container>
+                <label for="duration">Duration</label>
+                <input type="text" ng-model="duration" required id="duration">
+            </md-input-container>
+        </md-list-item>
+    </div>
+    <div flex="100">
+        <md-list-item>
+            <md-button class="md-raised" ui-sref="reservations">Cancel</md-button>
+            <md-button class="md-raised" ng-click="">Save</md-button>
+        </md-list-item>
+    </div>
+</div>
