@@ -1,0 +1,8 @@
+<div>
+    <header>
+        S M T W T F S
+    </header>
+    <div ng-repeat="week in calendarVm.getWeeks()">
+        <day ng-repeat="day in calendarVm.getDays(week)" date="{{day}}"></day>
+    </div>
+</div>

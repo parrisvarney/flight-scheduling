@@ -5,6 +5,7 @@ module.exports = {
         path: __dirname + "/src",
         filename: "index.packed.js"
     },
+    devtool: 'source-map',
     module: {
         loaders: [
             {
