@@ -1,6 +1,6 @@
 <div>
     <header>
-        S M T W T F S
+        <calendar-header ng-repeat="header in ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']" day="{{header}}"></calendar-header>
     </header>
     <div ng-repeat="week in calendarVm.getWeeks()">
         <day ng-repeat="day in calendarVm.getDays(week)" date="{{day}}"></day>

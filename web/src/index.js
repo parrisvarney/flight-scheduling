@@ -24,6 +24,7 @@ import InstructorsModel from './admin/instructors/model';
 import ReservationsController from './pilots/reservations/controller';
 import ReservationsModel from './pilots/reservations/model';
 import CalendarComponent from './pilots/reservations/components/calendar/month';
+import CalendarHeaderComponent from './pilots/reservations/components/calendar/header';
 import CalendarDayComponent from './pilots/reservations/components/calendar/day';
 
 // Initialize project
@@ -46,5 +47,6 @@ angular.module('flightScheduler', [
 .controller('ReservationsController', ReservationsController)
 .service('ReservationsModel', ReservationsModel)
 .component('calendar', new CalendarComponent())
+.component('calendarHeader', new CalendarHeaderComponent())
 .component('day', new CalendarDayComponent())
 ;
