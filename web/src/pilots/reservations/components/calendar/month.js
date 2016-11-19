@@ -1,3 +1,5 @@
+require('./calendar.styles.scss');
+
 import CalendarController from './controller';
 
 export default class CalendarComponent {

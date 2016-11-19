@@ -1,0 +1,37 @@
+.calendar-box {
+  display: inline-block;
+  padding: 0.5em;
+  border:  1px solid black;
+  width:   5em;
+}
+
+.calendar-header {
+  height:  2em;
+}
+
+.calendar-day {
+  height: 5em;
+}
+
+.calendar-nav {
+  height:     4em;
+  display:    block;
+  position:   relative;
+  text-align: center;
+
+  .month-indicator {
+    font: 30px black bold;
+  }
+
+  .previous-month-button {
+    display:  inline-block;
+    position: absolute;
+    left:     0;
+  }
+
+  .next-month-button {
+    display:  inline-block;
+    position: absolute;
+    right:    0;
+  }
+}

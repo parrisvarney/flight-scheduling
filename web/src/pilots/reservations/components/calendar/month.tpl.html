@@ -1,8 +1,15 @@
 <div>
+    <nav>
+        <calendar-nav></calendar-nav>
+    </nav>
     <header>
-        <calendar-header ng-repeat="header in ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']" day="{{header}}"></calendar-header>
+        <calendar-header ng-repeat="header in ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']">
+            {{header}}
+        </calendar-header>
     </header>
     <div ng-repeat="week in calendarVm.getWeeks()">
-        <day ng-repeat="day in calendarVm.getDays(week)" date="{{day}}"></day>
+        <calendar-day ng-repeat="day in calendarVm.getDays(week)">
+            {{day}}
+        </calendar-day>
     </div>
 </div>
