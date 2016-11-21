@@ -4,7 +4,7 @@ export default class ReservationsController {
      * @param {ReservationsModel} ReservationsModel
      */
     constructor($state, ReservationsModel) {
-        this.$state     = $state;
+        this.$state            = $state;
         this.ReservationsModel = ReservationsModel;
 
         this.calendarModel = null;

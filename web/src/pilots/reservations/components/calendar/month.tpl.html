@@ -7,9 +7,14 @@
             {{header}}
         </calendar-header>
     </header>
-    <div ng-repeat="week in calendarVm.getWeeks()">
-        <calendar-day ng-repeat="day in calendarVm.getDays(week)">
-            {{day}}
+    <div ng-repeat="week in calendarVm.calendar">
+        <calendar-day ng-repeat="day in week">
+            <div>
+                {{calendarVm.getDayData(day).displayDate}}
+            </div>
+            <div ng-show="calendarVm.getDayData(day).reservations > 0" style="position: absolute">
+                Booked: {{calendarVm.getDayData(day).reservations}}
+            <div>
         </calendar-day>
     </div>
 </div>

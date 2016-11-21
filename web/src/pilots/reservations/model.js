@@ -1,16 +1,16 @@
 export default class ReservationsModel {
     constructor($q) {
         const testReservations = [
-            {date: '2016-12-12 13:00:00', duration: '0200', aircraft: 'N8092H', pilot: 'Parris Varney', instructor: null},
-            {date: '2016-12-13 12:30:00', duration: '0200', aircraft: 'N8092H', pilot: 'Parris Varney', instructor: null},
-            {date: '2016-12-14 16:30:00', duration: '0200', aircraft: 'N8092H', pilot: 'Parris Varney', instructor: null},
+            {startTime: '1479733425', duration: '0200', aircraft: 'N8092H', pilot: 'Parris Varney', instructor: null},
+            {startTime: '1479819692', duration: '0200', aircraft: 'N8092H', pilot: 'Parris Varney', instructor: null},
+            {startTime: '1479303094', duration: '0200', aircraft: 'N8092H', pilot: 'Parris Varney', instructor: null},
         ];
 
         this.$q     = $q;
-        this._Reservations = testReservations;
+        this._reservations = testReservations;
     }
 
-    get Reservations() {
-        return this._Reservations;
+    get reservations() {
+        return this._reservations;
     }
 }
